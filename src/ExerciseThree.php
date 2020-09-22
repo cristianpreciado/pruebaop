@@ -8,7 +8,8 @@ namespace src;
  */
 class ExerciseThree
 {
-    // TODO: Crea un clase que maneje un juego, donde se deben atrapar una serie de enemigos para subir de nivel.
+    // TODO: Crea una clase que maneje un juego, 
+    // donde se deben atrapar una serie de enemigos para subir de nivel.
     // Cada cierta cantidad de enemigos atrapados hará que el jugador suba de nivel.
     // Cada vez que el jugador comience una partida, su nivel se reiniciará.
     // Se debe poder obtener el nivel en el que se encuentra el jugador.

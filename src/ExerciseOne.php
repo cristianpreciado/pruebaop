@@ -8,7 +8,9 @@ namespace src;
  */
 class ExerciseOne
 {
-    // TODO: Considera el siguiente código, devuelve las frases según sea el caso:
+    // TODO: La funcion solution recibe dos cadenas de carateres
+    // completa el codigo para que devuelva las frases según si
+    // str2 se encuentra dentro de str1
     
 	/**
      * Phrase contains another phrase validation method
