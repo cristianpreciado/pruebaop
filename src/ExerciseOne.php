@@ -19,7 +19,10 @@ class ExerciseOne
      */
     public function solution($str1, $str2)
     {
-        if () {
+        if (empty($str2) || strpos($str1,$str2)  !== false ) {
+            if(empty($str2)){
+                return "\"" . $str1 . "\" contiene ";
+            }
 			return "\"" . $str1 . "\" contiene \"" . $str2 . "\"";
         } else {
 			return "\"" . $str1 . "\" no contiene \"" . $str2 . "\"";

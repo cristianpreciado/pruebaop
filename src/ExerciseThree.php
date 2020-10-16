@@ -10,17 +10,26 @@ class ExerciseThree
 {
     // TODO: Crea una clase que maneje un juego, 
     // donde se deben atrapar una serie de enemigos para subir de nivel.
-    // Cada cierta cantidad de enemigos atrapados hará que el jugador suba de nivel.
-    // Cada vez que el jugador comience una partida, su nivel se reiniciará.
+    // Cada cierta cantidad de enemigos atrapados harï¿½ que el jugador suba de nivel.
+    // Cada vez que el jugador comience una partida, su nivel se reiniciarï¿½.
     // Se debe poder obtener el nivel en el que se encuentra el jugador.
-
+    var $level=0;
+    var $levelEnemy;
+    var $numberCatchEnemy=0;
+    function __construct($levelEnemy)
+    {
+        $this->levelEnemy = $levelEnemy;
+    }
     public function catchEnemy()
     {
-        // TODO: your code here
+        $this->numberCatchEnemy++;
+        if ($this->levelEnemy == $this->numberCatchEnemy || $this->levelEnemy == $this->numberCatchEnemy/$this->levelEnemy) {
+            $this->level++;
+        }
     }
 
     public function getLevel()
     {
-        // TODO: your code here
+        return $this->level;
     }
 }

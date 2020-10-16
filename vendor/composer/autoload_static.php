@@ -4,11 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita3a8e671cc6a94ed6a0e835b55fb693a
+class ComposerStaticInitf659cc7075d19d60da12e0b9e986daed
 {
     public static $files = array (
-        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -40,8 +40,8 @@ class ComposerStaticInita3a8e671cc6a94ed6a0e835b55fb693a
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -726,9 +726,9 @@ class ComposerStaticInita3a8e671cc6a94ed6a0e835b55fb693a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita3a8e671cc6a94ed6a0e835b55fb693a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita3a8e671cc6a94ed6a0e835b55fb693a::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInita3a8e671cc6a94ed6a0e835b55fb693a::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf659cc7075d19d60da12e0b9e986daed::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf659cc7075d19d60da12e0b9e986daed::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf659cc7075d19d60da12e0b9e986daed::$classMap;
 
         }, null, ClassLoader::class);
     }
